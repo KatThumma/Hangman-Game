@@ -5,47 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hangman-Game</title>
-    <link rel="stylesheet" href="C:\Users\Dell\Desktop\School\Hangman-Game\assets\css\style.css"></a>
-        <script rel="javascript" src="C:\Users\Dell\Desktop\School\Hangman-Game\assets\javascript\game.js"></script>
-    </source>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
    <container>
-<div class="backgroundImage">  
+    <div class="backgroundImage">  
     
-    <img src="C:\Users\Dell\Desktop\School\Hangman-Game\assets\images\nyan-cat.jpg" alt="nyan-cat background" style="width:1400px;height:240px;">
+    <img src="assets/images/nyan-cat.jpg" alt="nyan-cat background" style="width:1390px;height:160px;">
     </div>
     <div class="wrapper">
-        <h1>Hangman</h1>
 
-         <h2>Know your Meme...</h2>
-         <h3>or the stickman dies</h3>
-         <p>Use the alphabet below to guess the word</p>
-     </div>
-     <div class="wrapper">
-         <div id="buttons">
-         </div>  
-         <p id="catagoryName"></p>
-         <div id="hold">
-         </div>
-         <p id="mylives"></p>
-         <p id="clue">Clue -</p>  
-          <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
-         <div class="container">
-           <button id="hint">Hint</button>
-           <button id="reset">Play again</button>
-         </div>
+            <div class="jumbotron jumbotron-fluid">
+                 <div class="container">
+                      <h1 class="display-4">Hangman</h1>
+                      <p class="lead">Know your Meme...</p>
+
+                </div>
+            </div>
+
+            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header">
+                          Word to guess
+                    </div>
+                <div class="card-body">
+                    <h5 class="card-title" id="wordToGuess">_ _ _ _ _ _</h5>
+                </div>
+            </div>
+
+            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" >Wrong Guesses:</h5>
+                      <p id="wrongGuesses"> </p>
+                    </div>
+            </div>
+
+            <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                          <h5 class="card-title" id="numGuesses">Guesses left:</h5>
+                    </div>
+            </div>
+
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" id="winCounter">Wins:</h5>
+                    </div>
+            </div>
+
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title" id="lossCounter">Losses:</h5>
+                    </div>
+            </div>
+
+
+        
      </div>
 
 </container>
 
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 
 
-
-
+<script type"text/javascript" src="assets/javascript/app.js"></script>
     
 </body>
 </html>
